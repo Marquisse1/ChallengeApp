@@ -1,1 +1,17 @@
 ﻿Console.WriteLine("Hello, World!");
+int aaa;
+aaa = 5;
+var a = int.MaxValue;
+var b = int.MinValue;
+var c = uint.MaxValue;
+var d = uint.MinValue;
+var e = long.MaxValue;
+var f = long.MinValue;
+var g = ulong.MaxValue;
+var h = ulong.MinValue;
+var i = float.MaxValue;
+var j = float.MinValue;
+var k = double.MaxValue;
+var l = double.MinValue;
+var m = decimal.MaxValue;
+var n = decimal.MinValue;
