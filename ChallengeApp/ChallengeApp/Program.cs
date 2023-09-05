@@ -1,6 +1,6 @@
 ﻿Console.WriteLine("Hello, World!");
 int aaa;
-aaa = 5;
+aaa = 10;
 var a = int.MaxValue;
 var b = int.MinValue;
 var c = uint.MaxValue;
