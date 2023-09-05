@@ -1,11 +1,11 @@
 ﻿// Zadanie domowe, dzień 4
 
 string name1 = "Ewa";
-char sex1 = ('f');
+char sex1 = 'f';
 int age1 = 33;
 
 string name2 = "Marek";
-char sex2 = ('m');
+char sex2 = 'm';
 int age2 = 47;
 
 
