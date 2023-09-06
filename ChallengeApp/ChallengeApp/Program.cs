@@ -1,59 +1,18 @@
-﻿// Zadanie domowe, dzień 4
+﻿int[] grades = new int[365];
+string[] dayOfWeeks = new string[7];
+dayOfWeeks[0] = "poniedziałek";
+dayOfWeeks[1] = "wtorek";
+dayOfWeeks[2] = "środa";
+dayOfWeeks[3] = "czwartek";
+dayOfWeeks[4] = "piątek";
+dayOfWeeks[5] = "sobota";
+dayOfWeeks[6] = "niedziela";
+Console.WriteLine(dayOfWeeks[2]);
+string[] dayOfWeeks2 = {"poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota", "niedziela" };
+Console.WriteLine(dayOfWeeks2[0]);
 
-string name1 = "Ewa";
-char sex1 = 'f';
-int age1 = 33;
-
-string name2 = "Marek";
-char sex2 = 'm';
-int age2 = 47;
-
-
-if (sex1 == 'f' && age1 < 30)
+for(int i = 0; i<10; i = i + 1)
 {
-    Console.WriteLine("Kobieta, poniżej 30 lat.");
+    Console.WriteLine(i);
 }
-else if (sex1 == 'f' && age1 >= 30)
-{
-    if (name1 == "Ewa" && age1 == 33)
-    {
-        Console.WriteLine("Ewa, lat 33.");
-    }
-    else
-    {
-        Console.WriteLine("Ta kobieta nie ma na imię Ewa, lub nie ma 33 lat.");
-    }
-}
-else
-{
-    if (sex1 == 'm' && age1 < 18)
-    {
-        Console.WriteLine("To jest niepełnoletni mężczyzna.");
-    }
-    else
-    {
-        Console.WriteLine("To jest pełnoletni mężczyzna.");
-    }
-}
-
-
-if (name2 == "Marek" && sex2 == 'm')
-{
-    Console.WriteLine("Ten mężczyzna ma na imię Marek.");
-    if (age2 < 20)
-    {
-        Console.WriteLine("Marek jest nastolatkiem.");
-    }
-    else if (age2 < 50)
-    {
-        Console.WriteLine("Marek jest przed pięćdziesiątką.");
-    }
-    else
-    {
-        Console.WriteLine("Marek jest po pięćdziesiątce.");
-    }
-}
-else
-{
-    Console.WriteLine("To jest kobieta, lub mężczyzna, ale nie o imieniu Marek.");
-}
+Console.ReadLine();
