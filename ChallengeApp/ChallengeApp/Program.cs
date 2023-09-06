@@ -1,5 +1,4 @@
 ﻿//Zadanie domowe dzień 5
-using System;
 
 int number = 255478;
 string numberInString = number.ToString();
