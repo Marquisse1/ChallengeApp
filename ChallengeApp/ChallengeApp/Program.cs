@@ -1,39 +1,18 @@
-﻿User user1 = new User();
-User user2 = new User("Zuzia");
+﻿User user1 = new User("Adam", "123456");
+User user2 = new User("Zuzia", "123456");
 User user3 = new User("Marek", "hasło");
-User user4 = new User();
+User user4 = new User("Stefan", "123456");
 
+var name = user1.Login;
+Console.WriteLine(name);
 class User
 {
-    private string login;
-    private string password;
-    private string name;
-
-    public User()
-    {
-        this.login = "-";
-        this.password = "-";
-        this.name = "-";
-    }
-
-    public User(string login)
-    {
-        this.login = login;
-        this.password = "-";
-        this.name = "-";
-    }
-
     public User(string login, string password)
     {
-        this.login = login;
-        this.password = password;
-        this.name = "-";
+        this.Login = login;
+        this.Password = password;
     }
-    public User(string login, string password, string name)
-    {
-        this.login = login;
-        this.password = password;
-        this.name = name;
-    }
+    public string Login { get; private set; }
+    public string Password { get; set; }
 
 }
