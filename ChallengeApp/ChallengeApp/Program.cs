@@ -6,21 +6,28 @@ User user4 = new User("Stefan", "123456");
 user1.AddScore(5);
 user1.AddScore(7);
 user1.AddScore(2);
-Console.WriteLine(user1.score);
+var result = user1.Result;
+Console.WriteLine(result);
 class User
 {
-    public int score { get; private set; }
+    private List<int> score = new List<int>();
     public User(string login, string password)
     {
         this.Login = login;
         this.Password = password;
-        this.score = 0;
     }
     public string Login { get; private set; }
     public string Password { get; set; }
+    public int Result 
+    {
+        get
+        {
+            return this.score.Sum();
+        } 
+    }
 
     public void AddScore(int number)
     {
-        this.score += number;
+        this.score.Add(number);
     }
 }
