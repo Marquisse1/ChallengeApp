@@ -2,7 +2,6 @@
 {
     public class Employee
     {
-        private List<int> points = new List<int>();
         public Employee(string name, string surname, int age)
         {
             this.Name = name;
@@ -19,6 +18,8 @@
                 return this.points.Sum();
             }
         }
+
+        private List<int> points = new List<int>();
 
         public void AddPoints(int number)
         {
