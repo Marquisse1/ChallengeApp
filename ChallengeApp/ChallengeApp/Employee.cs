@@ -25,5 +25,10 @@
         {
             this.points.Add(number);
         }
+
+        public void SubPoints(int number)
+        {
+            this.points.Add(-number);
+        }  
     }
 }
